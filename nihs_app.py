@@ -250,7 +250,7 @@ def check_Iaq():
 
 
 #schedule.every(5).seconds.do(check_Iaq)
-schedule.every(10).seconds.do(Send_Iaq)
+schedule.every(20).seconds.do(Send_Iaq)
 #schedule.every(1).minutes.do(Send_MainPower)
 #schedule.every(1).minutes.do(Send_SubPower)
 
