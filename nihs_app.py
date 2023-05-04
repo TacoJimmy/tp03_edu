@@ -169,6 +169,7 @@ def on_message(client, userdata, msg):
         time.sleep(.5)
         #print (data_topic)
         print (data_payload)
+        print ("ntut yes")
     
         if data_payload['method'] == "CO2":
             IAQ_CO2Limit = int(data_payload['params'])
