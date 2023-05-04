@@ -178,7 +178,7 @@ def on_message(client, userdata, msg):
                 time.sleep(1)
                 payload_iaq = {"CO2_Limit":IAQ_CO2Limit}
                 client.publish("v1/devices/me/attributes", json.dumps(payload_iaq))
-                time.sleep(5)
+                time.sleep(6)
                 CO2_Limit = IAQ_CO2Limit
                 
         if data_payload['method'] == "TVOC":
@@ -188,7 +188,7 @@ def on_message(client, userdata, msg):
                 time.sleep(1)
                 payload_iaq = {"TVOC_Limit":IAQ_TVOCLimit}
                 client.publish("v1/devices/me/attributes", json.dumps(payload_iaq))
-                time.sleep(5)
+                time.sleep(6)
                 TVOC_Limit = IAQ_TVOCLimit
     except:
         pass
